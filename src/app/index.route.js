@@ -1,21 +1,21 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('mySampleApp')
-    .config(routerConfig);
+    angular
+        .module('angular-wizard')
+        .config(routerConfig);
 
-  /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
-    $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      });
+    /** @ngInject */
+    function routerConfig($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('home', {
+                url: '/',
+                templateUrl: 'app/main/main.html',
+                controller: 'MainController',
+                controllerAs: 'main'
+            });
 
-    $urlRouterProvider.otherwise('/');
-  }
+        $urlRouterProvider.otherwise('/');
+    }
 
 })();

@@ -1,39 +1,21 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('mySampleApp')
-    .controller('MainController', MainController);
+    angular
+        .module('angular-wizard')
+        .controller('MainController', MainController);
 
-  /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
-    var vm = this;
+    /** @ngInject */
+    function MainController($log) {
+        var vm = this;
+        vm.title = 'Angular Wizard : Home';
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1455345750366;
-    vm.showToastr = showToastr;
+        activate();
 
-    activate();
+        ///////////////////
 
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
+        function activate() {
+            $log.info('Main View Activated.')
+        }
     }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
-      });
-    }
-  }
 })();

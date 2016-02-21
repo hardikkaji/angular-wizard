@@ -1,14 +1,13 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('mySampleApp')
-    .run(runBlock);
+    angular
+        .module('angular-wizard')
+        .run(runBlock);
 
-  /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
-  }
+    /** @ngInject */
+    function runBlock($log) {
+        $log.debug('runBlock end');
+    }
 
 })();
