@@ -12,6 +12,8 @@
         var states = routerHelper.getStates();
         vm.isCurrent = isCurrent;
 
+        console.log(states);
+
         activate();
 
         function activate() { getNavRoutes(); }

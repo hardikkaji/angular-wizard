@@ -14,7 +14,7 @@
 
     var config = {
         appErrorPrefix: '[angularWizard Error] ',
-        appTitle: 'angularWizard'
+        appTitle: 'Angular-Wizard'
     };
 
     core.value('config', config);
