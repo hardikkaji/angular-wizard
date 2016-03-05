@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for ./src/client/app/layout/layout.module.js</title>
+    <title>Code coverage report for ./src/client/app/wizard/wizard.module.js</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../../../prettify.css">
     <link rel="stylesheet" href="../../../../base.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="header high">
-    <h1>Code coverage report for <span class="entity">./src/client/app/layout/layout.module.js</span></h1>
+    <h1>Code coverage report for <span class="entity">./src/client/app/wizard/wizard.module.js</span></h1>
     <h2>
         Statements: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -21,7 +21,7 @@
         Lines: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">./src/client/app/layout/</a> &#187; layout.module.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">./src/client/app/wizard/</a> &#187; wizard.module.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -30,15 +30,24 @@
 3
 4
 5
-6</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+6
+7
+8
+9</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function() {
     'use strict';
 &nbsp;
-    angular.module('app.layout', ['app.core']);
+    angular.module('app.wizard', [
+        'app.core',
+        'app.widgets'
+    ]);
 })();
 &nbsp;</pre></td></tr>
 </table></pre>
