@@ -1,0 +1,25 @@
+{
+  "name": "angular-wizard",
+  "description": "JSON based angular bootstrap wizard",
+  "main": "index.js",
+  "authors": [
+    "Hardik Kaji"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "gulp",
+    "angular",
+    "angular",
+    "wizard"
+  ],
+  "homepage": "https://github.com/hardikkaji/angular-wizard",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
