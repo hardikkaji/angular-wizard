@@ -4,11 +4,17 @@
   "description": "JSON based angular bootstrap wizard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hardikkaji/angular-wizard.git"
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-mocha": "^2.0.0",
+    "mocha": "^2.1.0",
+    "mocha-phantomjs": "^3.5.2",
+    "path": "^0.4.9",
+    "phantomjs": "^1.9.0"
   },
   "keywords": [
     "gulp",
@@ -16,13 +22,14 @@
     "angular",
     "wizard"
   ],
-  "author": {
-    name: "Hardik Kaji",
-    email: "hardikkaji@gmail.com"
-  },
+  "author": "Hardik Kaji",
   "license": "UNLICENSED",
+  "homepage": "https://github.com/hardikkaji/angular-wizard",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hardikkaji/angular-wizard.git"
+  },
   "bugs": {
     "url": "https://github.com/hardikkaji/angular-wizard/issues"
-  },
-  "homepage": "https://github.com/hardikkaji/angular-wizard"
+  }
 }
