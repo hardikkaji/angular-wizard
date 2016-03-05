@@ -16,10 +16,10 @@
     "angular",
     "wizard"
   ],
-  "author":{
+  "author": {
     name: "Hardik Kaji",
-    
-    } ,
+    email: "hardikkaji@gmail.com"
+  },
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/hardikkaji/angular-wizard/issues"
