@@ -9,8 +9,10 @@ module.exports = function(config) {
 			'src/**/*.js',
 			'test/**/*.spec.js'
 		],
-		browser: ['PhantomJS'],
-		reporters: ['mocha'],
+		proxies:{
+			'/': 'http://localhost:8888/'
+		},
+		browsers: ['PhantomJS'],
 		singleRun: false,
 		preprocessors: gulpConfig.karma.preprocessors,
 		port: 9876,
