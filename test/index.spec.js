@@ -1,7 +1,8 @@
 var expect = require('chai').expect;
+var test = require('../src/index.js');
 
 describe('test setup', function() {
   it('should work', function() {
-    expect(true).to.be.true;
+    expect(test()).to.be.true;
   });
 });

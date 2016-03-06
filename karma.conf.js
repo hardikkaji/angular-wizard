@@ -17,7 +17,7 @@ module.exports = function(config) {
 		preprocessors: gulpConfig.karma.preprocessors,
 		port: 9876,
 		colors: true,
-		reporters: ['progress'],
+		reporters: ['progress', 'coverage'],
 		autoWatch: true,
 		browserify: {
 			debug: true,
