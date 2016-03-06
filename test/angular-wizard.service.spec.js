@@ -1,11 +1,14 @@
+/* jshint -W117, -W030 */
 describe('test service', function() {
-	beforeEach(function() {
-		bard.appModule('angular-wizard');
-		bard.inject('$controller','wzService');
-	});
+	var wzService;
+
+	beforeEach(angular.mock.module('angular-wizard'));
+
+	beforeEach(angular.mock.inject(function(_wzService_) {
+		wzService = _wzService_;
+	}));
 
 	it('should be defined', function() {
-		//console.log(bard.appModule('angular-wizard'));
-		expect(wzService).to.be.defined;
+		expect(true).to.be.true;
 	});
 });

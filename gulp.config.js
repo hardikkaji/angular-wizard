@@ -14,7 +14,7 @@ module.exports = function() {
 				'./*.js'
 			],
 			src: [
-				src + '**/*.modue.js'
+				src + '**/*.module.js'
 			],
 			watch: [
 				src + '**/*.js'
