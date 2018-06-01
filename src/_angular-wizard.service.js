@@ -5,6 +5,9 @@
 		.module('angular-wizard')
 		.factory('wzService', wzService);
 
+	/**
+	 * @function wzService
+	 */
 	function wzService() {
 		var service = {
 			test: require('./index.js')
